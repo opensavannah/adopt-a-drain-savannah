@@ -199,6 +199,10 @@ a.guidelines {
   margin-left: 20px;
 }
 
+#info_window a:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .sidebar, .signed-in .sidebar {
     height: 100%;
