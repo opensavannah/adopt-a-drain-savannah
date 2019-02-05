@@ -41,39 +41,39 @@ class InfoWindowControllerTest < ActionController::TestCase
     assert_select 'div', /by #{@user.name}\s+of #{@user.organization}/
   end
 
-  test 'should show adoption form if drain is not adopted' do
-    sign_in @user
-    get :index, thing_id: @thing.id
-    assert_not_nil assigns :thing
-    assert_response :success
-    assert_template :adopt
-    assert_select 'h2', 'Adopt this Drain'
-    assert_select 'form#adoption_form' do
-      assert_select '[action=?]', '/things'
-      assert_select '[method=?]', 'post'
-    end
-    assert_select 'input[name="_method"]' do
-      assert_select '[type=?]', 'hidden'
-      assert_select '[value=?]', 'put'
-    end
-    assert_select 'input[name="commit"]' do
-      assert_select '[type=?]', 'submit'
-      assert_select '[value=?]', 'Adopt!'
-    end
-  end
+  # test 'should show adoption form if drain is not adopted' do
+  #   sign_in @user
+  #   get :index, thing_id: @thing.id
+  #   assert_not_nil assigns :thing
+  #   assert_response :success
+  #   assert_template :adopt
+  #   assert_select 'h2', 'Adopt this Drain'
+  #   assert_select 'form#adoption_form' do
+  #     assert_select '[action=?]', '/things'
+  #     assert_select '[method=?]', 'post'
+  #   end
+  #   assert_select 'input[name="_method"]' do
+  #     assert_select '[type=?]', 'hidden'
+  #     assert_select '[value=?]', 'put'
+  #   end
+  #   assert_select 'input[name="commit"]' do
+  #     assert_select '[type=?]', 'submit'
+  #     assert_select '[value=?]', 'Adopt!'
+  #   end
+  # end
 
-  test 'should show special link on adoption form if it has one' do
-    sign_in @user
-    Thing.stub :find_by_id, @thing do
-      @thing.stub :detail_link, 'http://example.com' do
-        get :index, thing_id: @thing.id
-      end
-    end
-    assert_response :success
-    assert_select 'a', /This .* is special! Learn why./ do
-      assert_select '[href=?]', 'http://example.com'
-    end
-  end
+  # test 'should show special link on adoption form if it has one' do
+  #   sign_in @user
+  #   Thing.stub :find_by_id, @thing do
+  #     @thing.stub :detail_link, 'http://example.com' do
+  #       get :index, thing_id: @thing.id
+  #     end
+  #   end
+  #   assert_response :success
+  #   assert_select 'a', /This .* is special! Learn why./ do
+  #     assert_select '[href=?]', 'http://example.com'
+  #   end
+  # end
 
   test 'should show sign-in form if signed out' do
     get :index, thing_id: @thing.id

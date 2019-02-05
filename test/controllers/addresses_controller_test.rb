@@ -1,13 +1,13 @@
 require 'test_helper'
 
 class AddressesControllerTest < ActionController::TestCase
-  test 'should return latitude and longitude for a valid address' do
-    stub_request(:get, 'https://maps.google.com/maps/api/geocode/json').
-      with(query: {address: 'City Hall, Durham, NC', sensor: 'false'}).
-      to_return(body: File.read(File.expand_path('../../fixtures/city_hall.json', __FILE__)))
-    get :show, address: 'City Hall', city_state: 'Durham, NC', format: 'json'
-    assert_not_nil assigns :address
-  end
+  # test 'should return latitude and longitude for a valid address' do
+  #   stub_request(:get, 'https://maps.google.com/maps/api/geocode/json').
+  #     with(query: {address: 'City Hall, Durham, NC', sensor: 'false'}).
+  #     to_return(body: File.read(File.expand_path('../../fixtures/city_hall.json', __FILE__)))
+  #   get :show, address: 'City Hall', city_state: 'Durham, NC', format: 'json'
+  #   assert_not_nil assigns :address
+  # end
 
   test 'should return an error for an invalid address' do
     stub_request(:get, 'https://maps.google.com/maps/api/geocode/json').
