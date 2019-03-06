@@ -59,8 +59,5 @@ adopt-a-drain/app/mailers/application_mailer.rb
 
 If you have any complaints, please email or contact us:
 
-SFdrain : info@sfwater.com
+Laura Smith: adoptadraindurham@gmail.com
 
-Dane Summers : dsummersl@gmail.com
-
-Mario Jimenez : marotjimenez@gmail.com
