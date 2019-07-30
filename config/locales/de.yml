@@ -22,13 +22,13 @@ de:
     required: "(erforderlich)"
   defaults:
     address: "Adresse"
-    address_1: "1 City Hall Plaza"
-    address_2: "Suite 500"
-    city: "Durham"
-    city_state: "Durham, North Carolina"
+    address_1: "2 E Bay St"
+    address_2: ""
+    city: "Savannah"
+    city_state: "Savannah, GA"
     neighborhood: "Downtown"
     sms_number: "857-555-1212"
-    state: "MA"
+    state: "GA"
     thing: "Drain"
     this_thing: "Dieser %{thing}"
     tagline: "Verantwortung dafür übernehmen, einen Drainen auszubuddeln, nachdem es geschneit hat."
@@ -83,11 +83,11 @@ de:
     thank_you: "Vielen Dank für die Annahme dieser %{thing}!"
     tos: "Nutzungsbedingungen"
   sponsors:
-    built: "Erbaut in Boston"
+    built: "Erbaut in Savannah"
     # Not sure what to put in built
-    cfa: "Code for Amerika"
-    city: "City of Boston"
+    cfa: "OpenSavannah"
+    city: "City of Savannah"
     # Not sure what to put in city
     mayor:
-      name: "Bill Bell"
+      name: "Eddie DeLoach"
       title: "Mayor"
