@@ -1,8 +1,8 @@
 build:
   docker:
     web: Dockerfile
-    worker: worker/Dockerfile
+    #worker: worker/Dockerfile
 release:
-  image: worker
+  image: web
   command:
     - bundle exec rake assets:precompile
