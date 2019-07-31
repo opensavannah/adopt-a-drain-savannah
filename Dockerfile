@@ -10,6 +10,7 @@ WORKDIR /myapp
 EXPOSE 3000
 COPY . /myapp
 ARG BUNDLE_INSTALL_ARGS
+ARG RAILS_ENV=development
 RUN bundle install ${BUNDLE_INSTALL_ARGS}
-RUN if [ "$RAILS_ENV" = "production "]; then SECRET_KEY_BASE=$(rake secret) bundle exec rake assets:precompile; fi
+RUN if [ "$RAILS_ENV" = "production" ]; then SECRET_KEY_BASE=$(rake secret) bundle exec rake assets:precompile; fi
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
