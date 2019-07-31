@@ -2,9 +2,11 @@ build:
   docker:
     web: Dockerfile
     #worker: worker/Dockerfile
+  config:
+    RAILS_ENV: production
 release:
   image: web
   command:
-    - bundle exec rake assets:precompile
+    - RAILS_ENV=production bundle exec rake assets:precompile
 run:
   web: bundle exec puma -C config/puma.rb
