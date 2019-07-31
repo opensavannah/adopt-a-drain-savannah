@@ -9,6 +9,8 @@ RUN mkdir /myapp
 WORKDIR /myapp
 EXPOSE 3000
 COPY . /myapp
-RUN bundle install
-#RUN RAILS_ENV=production bundle exec rake assets:precompile
+RUN bundle install --without development test
+ENV RAILS_ENV=production
+ENV RACK_ENV=production
+RUN bundle exec rake assets:precompile
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
