@@ -10,4 +10,5 @@ WORKDIR /myapp
 EXPOSE 3000
 COPY . /myapp
 RUN bundle install
-CMD ["bundle", "exec", "puma", "-p", "3000"]
+RUN RAILS_ENV=production bundle exec rake assets:precompile
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
