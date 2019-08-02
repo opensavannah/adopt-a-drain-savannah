@@ -179,7 +179,7 @@ timely fashion. If critical issues for a particular implementation exist at the
 time of a major release, support for that Ruby version may be dropped.
 
 ## Copyright
-Copyright (c) 2017 Code for Durham. See [LICENSE.md](https://github.com/opensavannah/adopt-a-drain/blob/master/LICENSE.md) for details.
+Copyright (c) 2019 Code for Savannah. See [LICENSE.md](https://github.com/opensavannah/adopt-a-drain/blob/master/LICENSE.md) for details.
 
 [license]: https://github.com/opensavannah/adopt-a-drain/blob/master/LICENSE.md
 
