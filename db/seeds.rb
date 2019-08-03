@@ -10,7 +10,7 @@ r = Random.new
   Thing.where(city_id: i).first_or_initialize.tap do |thing|
     thing.name = "Some Drain #{i}"
     thing.lat = r.rand(32.0809..36.10)
-    thing.lng = r.rand(-81.0,-78.90)
+    thing.lng = r.rand(-81.0..-78.90)
     thing.system_use_code = ['MS4', 'STORM', 'COMB', 'UNK'].sample
     thing.save!
   end
