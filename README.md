@@ -2,14 +2,9 @@
 
 Claim responsibility for cleaning out a storm drain after it rains.
 
-[![Travis CI](https://travis-ci.org/specious/adopt-a-drain.svg?branch=production)](https://travis-ci.org/specious/adopt-a-drain)
-
-## Screenshot
-![Adopt-a-Drain](/adopt.png "Adopt-a-Drain")
-
 ## Production
 
-https://adoptadrain.codefordurham.com/
+https://adopt-a-drain-savannah.org
 
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
