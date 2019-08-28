@@ -21,7 +21,7 @@ $(function() {
     scaleControl: false,
     streetViewControl: true,
     zoom: 17,
-    zoomControl: true,
+    zoomControl: false,
     styles: [
       {"featureType":"transit", "stylers":[{visibility: "off"}]},
       {
@@ -98,7 +98,7 @@ $(function() {
 
   var icons = {
     available: {
-      name: 'Drains to Ogeechee/Savannah River',
+      name: 'Drains to Ogeechee/Savannah',
       title:  'River',
       icon: '<%= image_path 'markers/tosewer.png' %>'
     },
