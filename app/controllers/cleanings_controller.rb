@@ -1,0 +1,2 @@
+class CleaningsController < ApplicationController
+end
