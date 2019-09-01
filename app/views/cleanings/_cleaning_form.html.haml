@@ -1,4 +1,4 @@
-= form_for :cleaning, :html => {:id => "cleaning-form", :class => "form-vertical"} do |f|
+= form_for :cleanings, :url => {action: 'create'}, :html => {:id => "cleaning-form", :class => "form-vertical"} do |f|
     .form-group
         %label.control-label{:for => "date_cleaned", :id => "date_cleaned_label"}
         = t("labels.date_cleaned")
@@ -6,5 +6,7 @@
         %label.control-label{:for => "diverted", :id => "diverted_label"}
         = t("labels.diverted")
         = f.text_area "diverted", :class => "form-control"
+        = f.hidden_field "user_id", :value => params[:user]
+        = f.hidden_field "thing_id", :value => params[:thing]
     .form-actions
         = f.submit t("buttons.submit_cleaning"), :class => "btn btn-primary btn-block"
