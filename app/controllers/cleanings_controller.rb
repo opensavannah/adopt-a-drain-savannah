@@ -4,7 +4,7 @@ class CleaningsController < ApplicationController
         @cleaning = Cleaning.new(cleaning_params)
         if @cleaning.save
             respond_to do |format|
-                format.html { redirect_to :root }
+                format.html { render :created }
                 format.json { render(json: @cleaning) }
             end
         else
