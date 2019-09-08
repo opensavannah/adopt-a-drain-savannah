@@ -8,7 +8,9 @@ class CleaningsController < ApplicationController
                 format.json { render(json: @cleaning) }
             end
         else
-            render(json: {errors: @thing.errors}, status: 500)
+            respond_to do |format|
+                format.json { render(json: {errors: @thing.errors}, status: 500) }
+            end
         end        
     end
 

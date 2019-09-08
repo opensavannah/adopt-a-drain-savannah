@@ -6,7 +6,7 @@
     .form-group
         %label.control-label{:for => "date_cleaned", :id => "date_cleaned_label"}
         = t("labels.date_cleaned")
-        = f.date_field "date_cleaned", :class => "form-control"
+        = f.date_field "date_cleaned", :class => "form-control", :required => true
         %label.control-label{:for => "diverted", :id => "diverted_label"}
         = t("labels.diverted")
         %i.fa.fa-question-circle{:data_toggle=>"tooltip", :title=>"Please enter the type and weight of the materials you pulled out of the drain.  Ex: 2lbs of hard plastic & 3lbs of pine straw.  This information helps tremendously with research."}
