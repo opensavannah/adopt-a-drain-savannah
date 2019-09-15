@@ -14,6 +14,7 @@ de:
     sign_in: "Einloggen"
     sign_out: "Ausloggen"
     sign_up: "Registrieren"
+    submit_cleaning: "Reinigung Abschicken"
     update: "Aktualisierung"
   captions:
     optional: "(optional)"
@@ -44,6 +45,8 @@ de:
     address_2: "Adresszeile 2"
     city: "Stadt"
     city_state: "Stadt"
+    date_cleaned: "Datum gereinigt"
+    diverted: "Material aus dem Abfluss Umgeleitet"
     email: "E-Mail-Adresse"
     name: "Name"
     name_thing: "Geben Sie diesem %{thing} einen Namen"
