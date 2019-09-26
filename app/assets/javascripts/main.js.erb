@@ -367,6 +367,8 @@ $(function() {
             $('#address').focus();
           } else {
             $('#address').parent().removeClass(errorClass);
+            //Close the sidebar on mobile devices to reveal the map.
+            $('.sidebar').removeClass('sidebar-full');
             $('#address').next(".help-block").html('');
             zoomTo(data[0], data[1]);
           }
