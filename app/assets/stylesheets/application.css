@@ -39,6 +39,11 @@ div#logos .row div {
   text-align: center;
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
   font-size: 16px;
 }
