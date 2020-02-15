@@ -264,6 +264,11 @@ $(function() {
           ));
   }
   function zoomTo(lat, lng, zoomLevel) {
+     /* Check to see if the hamburger menu appears */
+     if($('.sidebar button.navbar-toggle').is(":visible")){
+        $('div.sidebar').removeClass('sidebar-full');
+     }
+     
     if (typeof zoomLevel === 'undefined') { zoomLevel = 18; }
     map.setCenter(new google.maps.LatLng(lat, lng));
     map.setZoom(zoomLevel);
