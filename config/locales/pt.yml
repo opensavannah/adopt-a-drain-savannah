@@ -31,7 +31,7 @@ pt:
     state: "NC"
     thing: "hidrante"
     this_thing: "Este %{thing}"
-    tagline: "Responsabilidade pedido de pá para fora um %{thing} de incêndio depois que neva."
+    tagline: "Dicas de drenagem e segurança"
     tos: "Ao inscrever-se, você concorda com os %{tos}."
     voice_number: "617-555-1212"
     zip: "02201-2013"

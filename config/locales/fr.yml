@@ -31,7 +31,7 @@ fr:
     state: "MA"
     thing: "bouche d'incendie"
     this_thing: "Cette %{thing}"
-    tagline: "La responsabilité Réclamation pour pelleter une %{thing} le feu après qu'il neige."
+    tagline: "Sécurité de vidange et conseils de nettoyage"
     tos: "En vous inscrivant, vous acceptez les %{tos}."
     voice_number: "617-555-1212"
     zip: "02201-2013"

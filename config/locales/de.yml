@@ -32,7 +32,7 @@ de:
     state: "GA"
     thing: "Drain"
     this_thing: "Dieser %{thing}"
-    tagline: "Verantwortung dafür übernehmen, einen Drainen auszubuddeln, nachdem es geschneit hat."
+    tagline: "Tipps zum Ablassen von Sicherheit und Reinigung"
     tos: "Mit der Anmeldung erklären Sie sich mit den %{tos} einverstanden."
     voice_number: "617-555-1212"
     zip: "02201-2013"

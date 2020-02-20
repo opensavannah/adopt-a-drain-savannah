@@ -31,7 +31,7 @@ es:
     state: "GA"
     thing: "boca de incendio"
     this_thing: "Esta %{thing}"
-    tagline: "Reclamar la responsabilidad para adoptar un alcantarillado"  # después de que las nieves. Not sure about this text
+    tagline: "Drenaje de seguridad y consejos de limpieza"  # después de que las nieves. Not sure about this text
     tos: "Al registrarse, usted está de acuerdo con los %{tos}."
     voice_number: "617-555-1212"
     zip: "02201-2013"

@@ -31,7 +31,7 @@ it:
     state: "NC"
     thing: "idrante"
     this_thing: "Questo %{thing}"
-    tagline: "Richiedi la responsabilità per spalare un idrante dopo una nevicata."
+    tagline: "Svuotare i suggerimenti di sicurezza e pulizia"
     tos: "Iscrivendoti, aderisci alle %{tos}."
     voice_number: "617-555-1212"
     zip: "02201-2013"
