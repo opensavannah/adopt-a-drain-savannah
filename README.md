@@ -4,7 +4,7 @@ Claim responsibility for cleaning out a storm drain after it rains.
 
 ## Production
 
-https://adopt-a-drain-savannah.org
+https://drainsav.org
 
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
