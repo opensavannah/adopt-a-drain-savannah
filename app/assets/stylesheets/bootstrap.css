@@ -4359,8 +4359,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
-  border-style: solid;
-  border-width: thin;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
