@@ -1,5 +1,4 @@
-h1,
-h2 {
+h1, h2 {
   text-align: center;
   margin: 20px 0 10px;
 }
@@ -22,14 +21,7 @@ input {
   width: 200px;
 }
 
-.sidebar input,
-.sidebar select,
-.sidebar option,
-.sidebar button,
-.sidebar form.search-form input,
-.sidebar form.search-form select,
-.sidebar form.search-form option,
-.sidebar a.btn {
+.sidebar input, .sidebar select, .sidebar option, .sidebar button, .sidebar form.search-form input, .sidebar form.search-form select, .sidebar form.search-form option, .sidebar a.btn {
   display: block;
   margin-bottom: 10px;
 }
@@ -43,8 +35,7 @@ input {
   padding-right: 22px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
   display: inline;
   width: auto;
   margin-right: 10px;
@@ -58,9 +49,7 @@ input#user_existing {
   margin-bottom: 10px;
 }
 
-form select,
-button.btn,
-input[type="submit"].btn {
+form select, button.btn, input[type="submit"].btn {
 }
 
 .btn-primary {
@@ -69,7 +58,7 @@ input[type="submit"].btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #396b80;
+  background-color: #396B80;
   border-color: #2e6da4;
 }
 
@@ -161,10 +150,7 @@ form input.search-query {
   margin: -5px 0 0 0;
 }
 
-.sidebar #mayor a,
-.sidebar #mayor a:active,
-.sidebar #mayor a:hover,
-.sidebar #mayor a:visited {
+.sidebar #mayor a, .sidebar #mayor a:active, .sidebar #mayor a:hover, .sidebar #mayor a:visited {
   color: #000;
   text-decoration: none;
 }
